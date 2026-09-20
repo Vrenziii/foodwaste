@@ -22,7 +22,7 @@ const Product = sequelize.define(
 			allowNull: true,
 		},
 		kategori: {
-			type: DataTypes.ENUM("makanan", "minuman", "snack", "lainnya"),
+			type: DataTypes.STRING,
 			defaultValue: "makanan",
 			allowNull: false,
 		},
@@ -56,10 +56,12 @@ const Product = sequelize.define(
 		validatorId: {
 			type: DataTypes.INTEGER,
 			allowNull: true,
+			field: "validatorId", // Pastikan merujuk ke kolom MySQL
 		},
 		validatedAt: {
 			type: DataTypes.DATE,
 			allowNull: true,
+			field: "validatedAt", // Pastikan merujuk ke kolom MySQL
 		},
 	},
 	{

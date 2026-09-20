@@ -28,7 +28,10 @@ export default function LoginPage() {
 
 			// Redirect Berdasarkan Role
 			const role = res.data.user.role;
-			if (role === "penjual" || role === "admin") {
+			// Redirect berdasarkan role
+			if (role === "validator" || role === "admin") {
+				router.push("/dashboard/validator");
+			} else if (role === "penjual") {
 				router.push("/dashboard/products");
 			} else {
 				router.push("/");
