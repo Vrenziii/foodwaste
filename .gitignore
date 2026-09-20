@@ -1,0 +1,23 @@
+# Dependency folders
+node_modules/
+
+# Environment variables (SANGAT PENTING!)
+.env
+.env.local
+.env.production
+.env.development
+
+# Build & Next.js cache
+.next/
+out/
+dist/
+build/
+
+# IDE & OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# File markdown dokumentasi internal (kecuali README.md)
+*.md
+!README.md
